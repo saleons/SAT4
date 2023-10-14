@@ -18,7 +18,7 @@ public interface InterfazBaseproductos extends JpaRepository<Producto,Long> {
 
         List<Producto> findAll();
 
-        @Query(value ="SELECT * FROM producto WHERE nombre = :nombre ORDER BY id DESC LIMIT 10",nativeQuery = true)
+        @Query(value ="SELECT * FROM producto WHERE nombre = :nombre ORDER BY id DESC LIMIT 1",nativeQuery = true)
 
                 //@Param=pasa los datos del id a param para enviarlo a la consulta @Query
         Producto findLastAlert(@Param("nombre") String nombre);
