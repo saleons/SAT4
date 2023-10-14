@@ -47,7 +47,7 @@ public class FrontController {
 
     //_______________________________________________METODOS CARGA INICIAL_________________________________________________________
 
-    @GetMapping("/a")
+    @GetMapping("/")
     //@ResponseBody para indicar que el resultado del método lo vuelque en el cuerpo de la respuesta.
     public String home(Model model){
         ModelAndView modelAndView = new ModelAndView();
